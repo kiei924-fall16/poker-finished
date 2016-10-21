@@ -31,10 +31,11 @@ $(function() {
   $(".deal").on("click", function(event) {
     event.preventDefault()
     var deck = getDeck().shuffle()
-    var fiveCards = deck.splice(0, 5)
-    fiveCards.forEach(card, function(card, index) {
-      $("#c" + (index + 1)).attr("src", "http://golearntocode.com/images/cards/" + card] + ".png")
-    }
+    $("#c1").attr("src", "http://golearntocode.com/images/cards/" + deck[0] + ".png")
+    $("#c2").attr("src", "http://golearntocode.com/images/cards/" + deck[1] + ".png")
+    $("#c3").attr("src", "http://golearntocode.com/images/cards/" + deck[2] + ".png")
+    $("#c4").attr("src", "http://golearntocode.com/images/cards/" + deck[3] + ".png")
+    $("#c5").attr("src", "http://golearntocode.com/images/cards/" + deck[4] + ".png")
   })
 
 })
